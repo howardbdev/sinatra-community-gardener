@@ -6,6 +6,8 @@
 
 ### Goals:
 - finish building out the basic file structure of the app
+  - Still need config.ru
+  - Still need to add controllers and views to app folder
 - create out models - include associations
 - create our migrations - including all attributes
 - create a seed file
