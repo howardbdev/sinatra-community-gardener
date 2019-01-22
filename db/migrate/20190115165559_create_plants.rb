@@ -7,7 +7,8 @@ class CreatePlants < ActiveRecord::Migration[5.2]
       t.string :species
       t.string :description
       t.string :harvest_time
-      t.timestamps, null: false
+      t.integer :garden_id
+      t.timestamps null: false
     end
   end
 end

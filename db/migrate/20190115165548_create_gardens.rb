@@ -4,7 +4,7 @@ class CreateGardens < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :location
       t.string :garden_type
-      t.timestamps, null: false
+      t.timestamps null: false
     end
   end
 end
