@@ -10,5 +10,14 @@
   - Still need to add controllers and views to app folder
 - create out models - include associations
 - create our migrations - including all attributes
-- create a seed file
+- create a seed file - Still need this!
+- test out models and our associations to make sure they are working the way we want
+
+
+## 2019-01-22
+
+### Goals:
+
+- run back through our associations and models/migrations  CHECK
+- create a seed file - Still need this!
 - test out models and our associations to make sure they are working the way we want
