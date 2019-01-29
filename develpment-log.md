@@ -19,5 +19,13 @@
 ### Goals:
 
 - run back through our associations and models/migrations  CHECK
-- create a seed file - Still need this!
-- test out models and our associations to make sure they are working the way we want
+- create a seed file - Still need this!  CHECK
+- test out models and our associations to make sure they are working the way we want  CHECK
+
+## 2019-01-29
+
+- Fix the `#slug` method!
+- Incorporate sessions
+  - add SessionsController
+  - add sign up/log in/log out functionality
+- Add a 'user landing page' <-- this could be a user show page or a 'dashboard'
