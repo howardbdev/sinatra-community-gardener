@@ -4,7 +4,7 @@ class ApplicationController < Sinatra::Base
     enable :sessions
     set :session_secret, "lame string that will soon be hexed"
     set :views, "app/views"
-    set :public, "public"
+    set :public_folder, "public"
   end
 
   get '/' do
