@@ -16,7 +16,7 @@
 
 ## 2019-01-22
 
-### Goals:
+### Goals:x
 
 - run back through our associations and models/migrations  CHECK
 - create a seed file - Still need this!  CHECK
@@ -26,6 +26,17 @@
 
 - Fix the `#slug` method!
 - Incorporate sessions
-  - add SessionsController
+  - add SessionsController  
   - add sign up/log in/log out functionality
+  - make sure 'bcrypt' is in Gemfile CHECK
+    - ^^ add `has_secure_password` to User model   CHECK
+      - update existing users with passwords
+  - add SysRandom (ENV[SESSION_SECRET])
 - Add a 'user landing page' <-- this could be a user show page or a 'dashboard'
+
+# 2019-02-05
+  - Incorporate sessions
+    - add SessionsController  
+    - add sign up/log in/log out functionality
+    - add SysRandom (ENV[SESSION_SECRET])
+  - Add a 'user landing page' <-- this could be a user show page or a 'dashboard'
