@@ -13,7 +13,11 @@ class SessionsController < ApplicationController
       # 3. log user in
       # 4. REDIRECT NOT RENDER TO ???
       user = User.create(params[:user])
-      ### WHUY NO USER ID ""??
+      # do we want to sign in????? YES
+      # what is logging in??
+      # it means we have a key-value pair on the session hash that
+      # holds an identifier, usually a user's id
+      session[:user_id] = user.id
       redirect "/users/#{user.id}"
     end
   end
