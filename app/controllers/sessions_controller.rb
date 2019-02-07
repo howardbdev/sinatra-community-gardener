@@ -13,7 +13,8 @@ class SessionsController < ApplicationController
       # 3. log user in
       # 4. REDIRECT NOT RENDER TO ???
       user = User.create(params[:user])
-      redirect "/users/hotdogs"
+      ### WHUY NO USER ID ""??
+      redirect "/users/#{user.id}"
     end
   end
 end
