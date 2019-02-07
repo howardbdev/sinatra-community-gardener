@@ -40,3 +40,10 @@
     - add sign up/log in/log out functionality
     - add SysRandom (ENV[SESSION_SECRET])
   - Add a 'user landing page' <-- this could be a user show page or a 'dashboard'
+
+# 2019-02-05
+  - Incorporate sessions
+    - add sign up CHECKish/log in/log out functionality
+    - application controller helper methods -- logged_in?  and current_user CHECK
+    - add SysRandom (ENV[SESSION_SECRET])
+  - Add a 'user landing page' <-- this could be a user show page or a 'dashboard'
