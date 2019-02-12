@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-    current_user.inspect
+    erb :welcome
   end
 
   helpers do
