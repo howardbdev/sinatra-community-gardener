@@ -19,17 +19,13 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect "/users/#{@user.slug}"
     else
-      # failure
-      # 3f.
-      # redirect '/login'
-      # might we want to render/??  under what circumstances?
-      # what about telling the user that something went wrong?
-      # ^^ how would we tell the user????
+
       erb :'/sessions/login'
     end
   end
 
   get '/logout' do # should this be a get request??????
-
+    session.clear
+    redirect '/'
   end
 end

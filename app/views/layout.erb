@@ -5,6 +5,11 @@
     <title>Sinatra Gardener</title>
   </head>
   <body>
+    <div class="nav">
+      <% if logged_in?  %>
+        <a href="/logout">Log Out</a>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
