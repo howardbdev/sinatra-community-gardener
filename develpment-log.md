@@ -69,11 +69,11 @@
 
   TO CREATE A GARDEN WE NEED:
     CONTROLLER ACTIONS:
-      - get '/gardens/new' <-- renders the form to create a garden
-      - post '/gardens'
+      - get '/gardens/new' <-- renders the form to create a garden DONE
+      - post '/gardens' PENDING
     VIEWS:
-      - gardens/new <-- contain the form 
-      - gardens/show <-- show the new garden
+      - gardens/new <-- contain the form DONE
+      - gardens/show <-- show the new garden PENDING
 
   - Make gardens links in user show page
   - Stretch goal - allow user to edit his or her information
