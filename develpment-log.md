@@ -16,7 +16,7 @@
 
 ## 2019-01-22
 
-### Goals:x
+### Goals:
 
 - run back through our associations and models/migrations  CHECK
 - create a seed file - Still need this!  CHECK
@@ -56,3 +56,24 @@
     - add SysRandom
   - Add a user landing page ? show? dashboard?
   - Fix root route
+
+# 2019-02-26
+
+  - Ensure login/signup/logout functionality is smooth
+    - wrap up log/in/out
+    - add SysRandom <-- on hold for now
+  - Add a user landing page ? show? dashboard?  CONTINUE WORKING ON THIS
+  - Add appropriate navigation -- we don't want users to ever have to touch/type in the browser URL bar
+  - Think about CR of gardens (garden create, plant create, also show and index)
+
+
+  TO CREATE A GARDEN WE NEED:
+    CONTROLLER ACTIONS:
+      - get '/gardens/new' <-- renders the form to create a garden
+      - post '/gardens'
+    VIEWS:
+      - gardens/new <-- contain the form 
+      - gardens/show <-- show the new garden
+
+  - Make gardens links in user show page
+  - Stretch goal - allow user to edit his or her information

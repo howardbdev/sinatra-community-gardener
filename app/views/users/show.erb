@@ -1,7 +1,14 @@
-Users show page
+<p>Users show page</p>
 
 <div>
   <h3><%= @user.name %></h3>
   <p><%= @user.email %></p>
   <p><%= @user.location %></p>
+</div>
+
+<div class="user-gardens">
+  <h4><%= @user.name %>'s Gardens</h4>
+  <% @user.gardens.each do |garden| %>
+    <p><%= garden.name %></p>
+  <% end %>
 </div>
