@@ -93,4 +93,7 @@
       - gardens/show <-- show the new garden PENDING
 
   - Make gardens links in user show page
-  - Stretch goal - allow user to edit his or her information
+
+  - Add gardens show view and route DONE
+  - add gardens edit/patch routes and view DONE
+  - add gardens new/create routes and view DONE 
