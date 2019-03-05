@@ -77,3 +77,20 @@
 
   - Make gardens links in user show page
   - Stretch goal - allow user to edit his or her information
+
+  # 2019-03-05
+
+    - add SysRandom <-- on hold for now
+  - Add a user landing page ? show? dashboard?  CONTINUE WORKING ON THIS
+  - Add appropriate navigation -- we don't want users to ever have to touch/type in the browser URL bar
+  - Think about CR (CRUD - create & read) of gardens (garden create, plant create, also show and index)
+
+
+  TO CREATE A GARDEN WE NEED:
+    CONTROLLER ACTIONS:
+      - post '/gardens' PENDING
+    VIEWS:
+      - gardens/show <-- show the new garden PENDING
+
+  - Make gardens links in user show page
+  - Stretch goal - allow user to edit his or her information
