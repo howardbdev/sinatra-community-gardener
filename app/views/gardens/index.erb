@@ -1,0 +1,4 @@
+Index page
+<% @gardens.each do |garden| %>
+  <h2><a href="/gardens/<%= garden.id %>"><%= garden.name %></a></h2>
+<% end %>
