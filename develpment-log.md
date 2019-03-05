@@ -81,9 +81,9 @@
   # 2019-03-05
 
     - add SysRandom <-- on hold for now
-  - Add a user landing page ? show? dashboard?  CONTINUE WORKING ON THIS
-  - Add appropriate navigation -- we don't want users to ever have to touch/type in the browser URL bar
-  - Think about CR (CRUD - create & read) of gardens (garden create, plant create, also show and index)
+  - Add a user landing page ? show? dashboard?  some work DONE -- more to do!
+  - Add appropriate navigation -- we don't want users to ever have to touch/type in the browser URL bar DONE (for now)
+  - Think about CR (CRUD - create & read) of gardens (garden create, plant create, also show and index) DONE (for now)
 
 
   TO CREATE A GARDEN WE NEED:
@@ -96,4 +96,7 @@
 
   - Add gardens show view and route DONE
   - add gardens edit/patch routes and view DONE
-  - add gardens new/create routes and view DONE 
+  - add gardens new/create routes and view DONE
+  - add gardens delete route and links DONE
+  - add gardens index action and view DONE
+  - add some more nav links to layout DONE
