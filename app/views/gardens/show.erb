@@ -1,3 +1,12 @@
-THIS WILL BE GARDENS SHOW PAGES
+<h3><%= @garden.name %></h3>
+<p>Location: <%= @garden.location %></p>
+<p>Garden type: <%= @garden.garden_type %></p>
 
-<h4><%= @garden.name %></h4>
+<br>
+<a href="/gardens/<%= @garden.id %>/edit">Edit this garden</a>
+<br>
+<br>
+<form class="" action="/gardens/<%= @garden.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" name="" value="Delete this garden">
+</form>
