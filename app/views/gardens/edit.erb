@@ -1,0 +1,9 @@
+<h3>Edit your Garden!</h3>
+
+<form class="" action="/gardens/<%= @garden.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" name="garden[name]" value="<%= @garden.name %>"><br>
+  <input type="text" name="garden[location]" value="<%= @garden.location %>"><br>
+  <input type="text" name="garden[garden_type]" value="<%= @garden.garden_type %>"><br>
+  <input type="submit" name="" value="Edit Garden">
+</form>
