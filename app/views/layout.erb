@@ -6,8 +6,11 @@
     <title>Sinatra Gardener</title>
   </head>
   <body>
-    <div class="nav">
+    <div class="navbar">
+      <a href="/gardens">Gardens Index</a>
       <% if logged_in?  %>
+        <a href="/gardens/new">Make a New Garden</a>
+        <a href="/users/<%= current_user.slug %>">My Profile</a>
         <a href="/logout">Log Out</a>
       <% end %>
     </div>
