@@ -1,8 +1,9 @@
 class GardensController < ApplicationController
 
-  # index action -- coming soon ;)
+  # index action
   get '/gardens' do
-
+    @gardens = Garden.all
+    erb :'/gardens/index'
   end
 
   # render the new garden form
@@ -31,6 +32,11 @@ class GardensController < ApplicationController
     @garden = Garden.find(params[:id])
     # now what?
     erb :'/gardens/show'
+  end
+
+  delete '/gardens/:id' do
+    Garden.find(params[:id]).destroy
+    redirect '/gardens'
   end
 
 end
