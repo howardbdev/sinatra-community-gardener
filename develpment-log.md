@@ -100,3 +100,14 @@
   - add gardens delete route and links DONE
   - add gardens index action and view DONE
   - add some more nav links to layout DONE
+
+  # 2019-03-12
+
+  CONTROLLER ACTIONS:
+    - post '/gardens' PENDING
+  VIEWS:
+    - gardens/show <-- show the new garden PENDING
+
+    - Make gardens links in user show page
+
+  - Add messages to user on form failure (flash messages)
