@@ -19,8 +19,9 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect "/users/#{@user.slug}"
     else
-
-      erb :'/sessions/login'
+      # should I render or redirect????!
+      # what else here would improve user experience?? (UX) -- a flash message (or any other way we could communicate to the user!)
+      redirect '/login'
     end
   end
 
