@@ -2,7 +2,7 @@
 
 <form action="/login" method="post">
   <input type="text" name="user[email]" value="<%= params[:user] ? params[:user][:email] : '' %>" placeholder="email"><br>
-  <input type="text" name="user[password]" value="" placeholder="password"><br>
+  <input type="password" name="user[password]" value="" placeholder="password"><br>
   <input type="submit" name="" value="Login!"><br>
 </form>
 
