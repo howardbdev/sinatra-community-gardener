@@ -13,8 +13,22 @@ class GardensController < ApplicationController
 
   post '/gardens' do
    # add code to create a new garden
-   @garden = Garden.create(params[:garden])
-   redirect "/gardens/#{@garden.id}"
+   # CURRENT SYMPTOMS:
+   # 1. I can create a totally empty garden with no attributes!  DONE!
+   # 2. No association happens on garden creation # minimize the lines of code ?
+   #  ^^ let's use AR methods
+   if params[:garden][:name] != "" && params[:garden][:location] != "" && params[:garden][:garden_type] != ""
+     @garden = Garden.create(params[:garden])
+     # UserGarden.create(user_id: current_user.id, garden: @garden)
+     current_user.gardens << @garden
+     redirect "/gardens/#{@garden.id}"
+   else
+     # failure
+     # ADD A FLASH MESSAGE
+     # REDIRECT OR RENDER (render in the future with a refactor to load the info a user has submitted - we would have to to add values)
+     redirect '/gardens/new'
+   end
+
   end
 
   get '/gardens/:id/edit' do
