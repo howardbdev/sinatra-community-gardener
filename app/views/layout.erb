@@ -12,6 +12,8 @@
         <a href="/gardens/new">Make a New Garden</a>
         <a href="/users/<%= current_user.slug %>">My Profile</a>
         <a href="/logout">Log Out</a>
+      <% else %>
+        <a href="/">Home</a>
       <% end %>
     </div>
     <%= yield %>
