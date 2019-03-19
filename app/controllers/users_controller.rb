@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   # show
   get "/users/:slug" do
+    redirect_if_not_logged_in
     # 1. find the current user <-- helper or no?
     @user = User.find_by_slug(params[:slug])
     # 2. render the show page
