@@ -104,10 +104,12 @@
   # 2019-03-12
 
   CONTROLLER ACTIONS:
-    - post '/gardens' PENDING
+    - post '/gardens' DONE (FOR NOW...)
   VIEWS:
     - gardens/show <-- show the new garden PENDING
 
     - Make gardens links in user show page
 
   - Add messages to user on form failure (flash messages)
+  - Fix link if logged out and looking at index
+- protections for editing and deleting gardens!
