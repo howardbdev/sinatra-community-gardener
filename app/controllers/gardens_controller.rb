@@ -8,6 +8,7 @@ class GardensController < ApplicationController
 
   # render the new garden form
   get '/gardens/new' do
+    redirect_if_not_logged_in
     erb :'/gardens/new'
   end
 
@@ -33,11 +34,13 @@ class GardensController < ApplicationController
 
   get '/gardens/:id/edit' do
     @garden = Garden.find(params[:id])
+    redirect_if_not_authorized(@garden)
     erb :'/gardens/edit'
   end
 
   patch '/gardens/:id' do
     @garden = Garden.find(params[:id])
+    redirect_if_not_authorized(@garden)
     @garden.update(params[:garden])
     redirect "/gardens/#{@garden.id}"
   end
@@ -49,7 +52,9 @@ class GardensController < ApplicationController
   end
 
   delete '/gardens/:id' do
-    Garden.find(params[:id]).destroy
+    garden = Garden.find(params[:id])
+    redirect_if_not_authorized(garden)
+    garden.destroy
     redirect '/gardens'
   end
 
