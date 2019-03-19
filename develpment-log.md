@@ -113,3 +113,11 @@
   - Add messages to user on form failure (flash messages)
   - Fix link if logged out and looking at index
 - protections for editing and deleting gardens!
+
+# 2019-03-19
+  - gardens/show <-- show the new garden PENDING
+  - Make gardens links in user show page
+  - Add messages to user on form failure (flash messages)
+  - Fix link if logged out and looking at index
+  - protections for editing and deleting gardens!
+  - add login/signup links anywhere we aren't logged in
