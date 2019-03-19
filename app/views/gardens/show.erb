@@ -3,10 +3,14 @@
 <p>Garden type: <%= @garden.garden_type %></p>
 
 <br>
-<a href="/gardens/<%= @garden.id %>/edit">Edit this garden</a>
-<br>
-<br>
-<form class="" action="/gardens/<%= @garden.id %>" method="post">
-  <input type="hidden" name="_method" value="delete">
-  <input type="submit" name="" value="Delete this garden">
-</form>
+
+<%# we have current_user and @garden %>
+<% if logged_in? && current_user.gardens.include?(@garden) %>
+  <a href="/gardens/<%= @garden.id %>/edit">Edit this garden</a>
+  <br>
+  <br>
+  <form class="" action="/gardens/<%= @garden.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" name="" value="Delete this garden">
+  </form>
+<% end %>
