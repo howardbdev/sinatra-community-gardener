@@ -115,9 +115,9 @@
 - protections for editing and deleting gardens!
 
 # 2019-03-19
-  - gardens/show <-- show the new garden PENDING
-  - Make gardens links in user show page
-  - Add messages to user on form failure (flash messages)
-  - Fix link if logged out and looking at index
-  - protections for editing and deleting gardens!
+  - gardens/show <-- show the new garden DONE
+  - Make gardens links in user show page DONE
+  - Add messages to user on form failure (flash messages) NOT STARTED
+  - Fix link if logged out and looking at index DONE
+  - protections for editing and deleting gardens! DONE
   - add login/signup links anywhere we aren't logged in
