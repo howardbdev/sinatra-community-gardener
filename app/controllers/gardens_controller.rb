@@ -22,11 +22,13 @@ class GardensController < ApplicationController
      @garden = Garden.create(params[:garden])
      # UserGarden.create(user_id: current_user.id, garden: @garden)
      current_user.gardens << @garden
+     flash[:notice] = "You have successfully created your new garden!"
      redirect "/gardens/#{@garden.id}"
    else
      # failure
      # ADD A FLASH MESSAGE
      # REDIRECT OR RENDER (render in the future with a refactor to load the info a user has submitted - we would have to to add values)
+     flash[:warning] = "Must provide a name, location, and garden type to creat a new garden."
      redirect '/gardens/new'
    end
 

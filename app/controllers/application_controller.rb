@@ -5,6 +5,7 @@ class ApplicationController < Sinatra::Base
     set :session_secret, "lame string that will soon be hexed"
     set :views, "app/views"
     set :public_folder, "public"
+    register Sinatra::Flash
   end
 
   get '/' do
@@ -23,6 +24,7 @@ class ApplicationController < Sinatra::Base
     # helper method to redirect if a user is not logged in
     def redirect_if_not_logged_in
       if !logged_in?
+        flash[:warning] = "You must be logged in to view that page."
         redirect '/'
       end
     end
@@ -30,7 +32,15 @@ class ApplicationController < Sinatra::Base
     # helper to redirect if a user is not authorized to edit a garden
     def redirect_if_not_authorized(garden)
       if !logged_in? || !current_user.gardens.include?(garden)
+        flash[:warning] = "You are not authorized to edit or delete that garden!"
         redirect '/gardens'
+      end
+    end
+
+    def validate_email_uniqueness(email)
+      if User.find_by(email: email)
+        flash[:warning] = "That email address is already taken.  Please use a different one!"
+        redirect '/signup'
       end
     end
   end
