@@ -11,9 +11,12 @@ class UsersController < ApplicationController
 
   # create
   post '/users' do
+    validate_email_uniqueness(params[:user][:email])
+    # Check the User model -- make sure this doesn't already exist as an email
     # what happens here??
     # 1. validate params
     if params[:user][:name].empty? || params[:user][:password].empty? || params[:user][:email].empty?
+      flash[:warning] = "You must provide a name, password, and email address!"
       redirect '/signup'
     else
       # 2. create user
@@ -24,6 +27,7 @@ class UsersController < ApplicationController
       # what is logging in??
       # it means we have a key-value pair on the session hash that
       # holds an identifier, usually a user's id
+      flash[:notice] = "You have successfully created an account!  Welcome, #{user.name}!"
       session[:user_id] = user.id
       redirect "/users/#{user.slug}"
     end

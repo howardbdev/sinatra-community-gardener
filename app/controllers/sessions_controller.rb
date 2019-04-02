@@ -16,11 +16,13 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(params[:user][:password])
       # success
       # 3s. Set session[:user_id] to user's id
+      flash[:notice] = "Welcome, #{@user.name}!"
       session[:user_id] = @user.id
       redirect "/users/#{@user.slug}"
     else
       # should I render or redirect????!
       # what else here would improve user experience?? (UX) -- a flash message (or any other way we could communicate to the user!)
+      flash[:warning] = "Invalid credentials.  Please try again or create an account."
       redirect '/login'
     end
   end
