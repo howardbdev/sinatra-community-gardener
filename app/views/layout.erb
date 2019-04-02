@@ -16,6 +16,14 @@
         <a href="/">Home</a>
       <% end %>
     </div>
+    <div class="flash">
+      <% if flash[:warning] %>
+        <h2 style="color: red"><%= flash[:warning] %></h2>
+      <% end %>
+      <% if flash[:notice] %>
+        <h2 style="color: green"><%= flash[:notice] %></h2>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
