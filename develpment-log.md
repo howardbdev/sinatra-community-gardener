@@ -121,3 +121,9 @@
   - Fix link if logged out and looking at index DONE
   - protections for editing and deleting gardens! DONE
   - add login/signup links anywhere we aren't logged in
+
+# 2019-04-02
+
+  - Add flash messages PENDING....
+  - ENSURE USER LOGIN (EMAIL) IS UNIQUE!!!!! HIGH PRIORITY
+  
