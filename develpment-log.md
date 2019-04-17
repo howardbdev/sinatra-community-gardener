@@ -125,5 +125,12 @@
 # 2019-04-02
 
   - Add flash messages PENDING....
-  - ENSURE USER LOGIN (EMAIL) IS UNIQUE!!!!! HIGH PRIORITY
-  
+  - ENSURE USER LOGIN (EMAIL) IS UNIQUE!!!!! HIGH PRIORITY DONE
+
+# 2019-04-16
+
+- Add flash messages DONE.... (add as we go along and build plant controller...)
+- ENSURE USER LOGIN (EMAIL) IS UNIQUE!!!!! HIGH PRIORITY DONE
+- Move helpers to a module DONE
+- CSS ?
+- PLANTS!!!  PENDING plants controller

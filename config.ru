@@ -6,4 +6,5 @@ use Rack::MethodOverride
 use UsersController
 use SessionsController
 use GardensController
+use PlantsController
 run ApplicationController
