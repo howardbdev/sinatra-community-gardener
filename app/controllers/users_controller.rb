@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
   # create
   post '/users' do
-    validate_email_uniqueness(params[:user][:email])
+    validate_email_uniqueness(params[:user][:email]) if !params[:user][:email].empty?
     # Check the User model -- make sure this doesn't already exist as an email
     # what happens here??
     # 1. validate params
