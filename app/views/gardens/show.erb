@@ -6,6 +6,13 @@
 
 <%# we have current_user and @garden %>
 <% if logged_in? && current_user.gardens.include?(@garden) %>
+
+  <a href="/gardens/<%= @garden.id %>/plants/new">Add Plants!</a><br><br>
+
+
+
+
+
   <a href="/gardens/<%= @garden.id %>/edit">Edit this garden</a>
   <br>
   <br>
