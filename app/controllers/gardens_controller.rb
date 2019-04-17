@@ -44,6 +44,7 @@ class GardensController < ApplicationController
     @garden = Garden.find(params[:id])
     redirect_if_not_authorized(@garden)
     @garden.update(params[:garden])
+    flash[:notice] = "Successfully updated #{@garden.name}"
     redirect "/gardens/#{@garden.id}"
   end
 
@@ -57,6 +58,7 @@ class GardensController < ApplicationController
     garden = Garden.find(params[:id])
     redirect_if_not_authorized(garden)
     garden.destroy
+    flash[:warning] = "Successfully deleted #{garden.name}!"
     redirect '/gardens'
   end
 
