@@ -10,7 +10,7 @@ This is a long, meandering video series, intentionally.  We built every file by 
 
 [Part 1 - Dec 12, 2018](https://youtu.be/KP-4HhNgENU)<br>
 [Part 2 - Jan 15, 2019](https://youtu.be/4i4hmA8KU2I)<br>
-[Part 3 - Jan 22, 2019](https://youtu.be/LJsenQttpbY)<br>
+[Part 3 - Jan 22, 2019](https://youtu.be/Lo6Tsn8giCM)<br>
 [Part 4 - Jan 29, 2019](https://youtu.be/V2mH8S583X4)<br>
 [Part 5 - Feb 5, 2019](https://youtu.be/ez7GrJrlC7Q)<br>
 [Part 6 - Feb 12, 2019](https://youtu.be/jVVSPdh83Bw)<br>
