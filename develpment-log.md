@@ -134,3 +134,10 @@
 - Move helpers to a module DONE
 - CSS ?
 - PLANTS!!!  PENDING plants controller
+
+# 2019-04-30
+
+- All about plants!!
+- remove age NOT DONE
+- add quantity to form
+- stretch goal -- USE AR Validations
