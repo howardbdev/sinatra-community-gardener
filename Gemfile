@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rb-readline'
 gem 'sinatra'
 gem 'activerecord'
 gem 'sinatra-activerecord'
