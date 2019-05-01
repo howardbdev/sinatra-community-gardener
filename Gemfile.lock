@@ -33,6 +33,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (12.3.2)
+    rb-readline (0.5.5)
     require_all (2.0.0)
     ripl (0.7.1)
       bond (~> 0.5.1)
@@ -77,6 +78,7 @@ DEPENDENCIES
   bcrypt
   pry
   rake
+  rb-readline
   require_all
   shotgun
   sinatra
