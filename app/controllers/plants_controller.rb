@@ -7,21 +7,19 @@ class PlantsController < ApplicationController
 
   post '/gardens/:garden_id/plants' do
     redirect_if_not_logged_in
-    # make sure the necessary params are available
-    # if params[plant_type], etc, != ""
-    # else flash warning invalid form and show form again
-
-    # what happens here???
-    # 1.  Find the garden from params id
     @garden = Garden.find(params[:garden_id])
-    # 2.  Build a plant off that garden
-    @plant = @garden.plants.build(params[:plant])
-    # 3.  Save the plant
-    if @plant.save
 
+    if !params[:plant][:plant_type].empty? && params[:plant][:growth_period] != "" && params[:plant][:description] != "" && !params[:quantity].empty?
+      params[:quantity].to_i.times {@garden.plants.create(params[:plant])}
+
+
+      flash[:notice] = "You have planted #{params[:quantity]} #{params[:plant][:plant_type]} plants"
+      redirect "/gardens/#{@garden.id}"
     else
-
+      # tell the user about failure
+      flash[:warning] = "You failed to create #{params[:quantity]} #{params[:plant][:plant_type].empty? ? "plant" : params[:plant][:plant_type]}s... you must have at least plant type, description, and growth period"
+      # redirect/render to the new form again
+      redirect "/gardens/#{@garden.id}/plants/new"
     end
-    # 4.  Redirect
   end
 end

@@ -3,21 +3,23 @@ NEW PLANT FORM
 <h1>FOR GARDEN <%= @garden.name %>:</h1>
 
 <form class="" action="/gardens/<%= @garden.id %>/plants" method="post">
-  <label type="text" for="plant[plant_type]" value="">Species</label>
+  <label type="text" for="plant[plant_type]" value="">Plant Type</label>
   <input type="text" name="plant[plant_type]" value=""><br>
+
   <label type="text" for="plant[species]" value="">Species</label>
   <input type="text" name="plant[species]" value=""><br>
+
   <label type="text" for="plant[description]" value="">Description</label>
   <input type="text" name="plant[description]" value=""><br>
-  <label type="text" for="plant[age]" value="">Age</label>
-  <input type="text" name="plant[age]" value=""><br>
+
   <label type="text" for="plant[growth_period]" value="">Growth Period</label>
   <input type="text" name="plant[growth_period]" value=""/><br>
   <label type="text" for="plant[harvest_time]" value="">Harvest Time</label>
   <input type="text" name="plant[harvest_time]" value=""><br>
 
-  <label for="plant[quantity]"></label>
-  <input type="text" name="plant[quantity]" value="">
+
+  <label for="quantity">Quantity</label>
+  <input type="text" name="quantity" value="">
 
   <input type="submit" name="" value="Create Plant!">
 </form>
