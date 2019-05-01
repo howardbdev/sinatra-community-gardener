@@ -20,3 +20,4 @@ This is a long, meandering video series, intentionally.  We built every file by 
 [Part 10 - Mar 19, 2019](https://youtu.be/uEegBweeFj0)<br>
 [Part 11 - Apr 2, 2019](https://youtu.be/EQNDqfiYVK4)<br>
 [Part 12 - Apr 16, 2019](https://youtu.be/06iLWrkalWU)<br>
+[Part 13 - Apr 30, 2019](https://youtu.be/HaZn9gOCjcM)<br>
