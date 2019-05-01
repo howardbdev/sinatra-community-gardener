@@ -4,7 +4,7 @@ A Sinatra web application that allows us to keep track of our gardens - these mi
 
 ## Disclaimer
 
-This is a long, meandering video series, intentionally.  We built every file by hand without using [Corneal](https://github.com/thebrianemory/corneal).  We're moving past project requirements and building an app that has more complexity than is required.  If you're looking for a much simpler Sinatra project build, check out [Sinatra Jounal App](https://github.com/howardbdev/sinatra-journal-app).
+This is a long, meandering video series, intentionally.  We built every file by hand without using [Corneal](https://github.com/thebrianemory/corneal).  We're moving past project requirements and building an app that has more complexity than is required.  If you're looking for a much simpler Sinatra project build, check out [Sinatra Journal App](https://github.com/howardbdev/sinatra-journal-app).
 
 ## Video links
 
